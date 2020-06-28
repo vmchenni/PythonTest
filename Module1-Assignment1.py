@@ -1,6 +1,8 @@
+# Write a program which will find factors of given number and find whether the factor is even or odd.
 # Factorial of a number to be calculated
 number = 5
 fact = 1
+
 #   Check if given number is zero
 if number == 0:
     print("Factorial of ", number, " is ", number)
