@@ -4,4 +4,4 @@ arr = np.loadtxt('sample.txt')
 print(arr)
 np.save('newfile.txt',arr)
 
-arr=np.genfromtxt()
+# arr=np.genfromtxt()
