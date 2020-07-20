@@ -16,6 +16,7 @@ tableDSScore=tableDSScore.rename({'Score':'Score_DSScore'},axis=1)
 # print(tableDSScore)
 
 combined=tableMaths.join(tablePhysics).join(tableDSScore)
+# Replacing column values, in this case its M with 1 and F with 2
 combined['Sex'].replace({'M':'1','F':'2'},inplace=True)
 combined = combined[["Name", "Age", "Sex","ID","Score_maths","Score_Physics","Score_DSScore"]]
 combined.to_csv("combined.csv")
